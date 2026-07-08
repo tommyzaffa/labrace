@@ -119,6 +119,12 @@
     const grid = $("#eventiGrid");
     if (!grid) return;
     grid.innerHTML = LB.events.map((e) => {
+      if (e.feature) {
+        return `<article class="ecard ecard--feature" data-anim>
+          <div class="ecard__img"><img src="assets/img/${e.img}" alt="${tv(e.title)}" loading="lazy"></div>
+          <span class="ecard__tag ecard__tag--feature">${tv(e.tag)}</span>
+        </article>`;
+      }
       const price = e.price ? `<div class="ecard__price">${tv(e.price) || e.price}${e.note ? `<span>${tv(e.note)}</span>` : ""}</div>` : "";
       return `<article class="ecard" data-anim>
         <div class="ecard__img"><img src="${IMG}${e.img}" alt="${tv(e.title)}" loading="lazy"></div>
@@ -222,8 +228,13 @@
     function measure() { max = Math.max(0, track.scrollWidth - track.clientWidth); }
     measure();
     window.addEventListener("resize", measure);
+    // lazy-loaded gallery images change scrollWidth after init → re-measure once
+    // everything is loaded, otherwise max stays 0 and nothing moves.
+    window.addEventListener("load", measure);
+    $$("#galTrack img").forEach((im) => im.addEventListener("load", measure));
 
     track.addEventListener("pointerdown", (e) => {
+      measure();
       down = true; startX = e.clientX; startScroll = target; track.setPointerCapture(e.pointerId);
     });
     track.addEventListener("pointermove", (e) => {
@@ -247,51 +258,35 @@
     }
     loop();
 
-    // subtle scroll-linked drift when section in view
+    // scroll-linked drift: as the page scrolls past the section the whole strip
+    // glides sideways on its own (skippable, slow, fluid). The drift is RELATIVE
+    // — vertical scroll adds the change in scroll-progress to wherever the user
+    // last left the strip (drag/wheel), so there is no snap/jump back to an
+    // absolute position when you resume scrolling.
     if (gsap && ScrollTrigger && !prefersReduced) {
+      let lastP = null;
       ScrollTrigger.create({
         trigger: section, start: "top bottom", end: "bottom top",
-        onUpdate: (self) => { if (!down) { target = self.progress * Math.min(max, max); } }
+        onUpdate: (self) => {
+          if (down) { lastP = self.progress; return; }
+          if (!max) measure();
+          if (lastP === null) { lastP = self.progress; return; }
+          target = Math.min(max, Math.max(0, target + (self.progress - lastP) * max));
+          lastP = self.progress;
+        }
       });
     }
   }
 
   /* ----------------------------------------------------------------------
-     GALLERY SCENE — pinned horizontal: the section holds fixed while the
-     vertical scroll drives the track sideways, then releases.
-     Desktop only; mobile / reduced-motion fall back to the drag gallery.
+     GALLERY SCENE — NOT pinned. The strip is laterally scrollable (drag /
+     horizontal wheel) and can be skipped by scrolling vertically: while you
+     scroll the page past the section, the photos glide sideways on their own,
+     slowly and fluidly. initGalleryDrag handles all of it (drag + wheel +
+     scroll-linked drift), so we just delegate to it on every viewport.
   ---------------------------------------------------------------------- */
   function initGalleryScroll() {
-    const section = $("#galleria");
-    const stage = $(".galleria__stage");
-    const track = $("#galTrack");
-    if (!section || !stage || !track || galleryInited) return;
-
-    const canPin = window.matchMedia("(min-width: 1000px)").matches;
-    if (!gsap || !ScrollTrigger || prefersReduced || !canPin) {
-      initGalleryDrag(); // fallback: draggable strip
-      return;
-    }
-    galleryInited = true;
-
-    const distance = () => Math.max(0, track.scrollWidth - window.innerWidth + 80);
-
-    // Pin the stage only for the CORE of the horizontal travel, so photos are
-    // already moving as the section arrives and keep gliding after it releases.
-    ScrollTrigger.create({
-      trigger: stage, start: "top top", end: () => "+=" + distance() * 0.8,
-      pin: true, anticipatePin: 1, invalidateOnRefresh: true,
-    });
-
-    // Track motion spans a wider range than the pin: a short lead-in before the
-    // section locks, the pinned middle, then a lead-out as it scrolls away.
-    gsap.fromTo(track, { x: 0 }, {
-      x: () => -distance(), ease: "none",
-      scrollTrigger: {
-        trigger: section, start: "top 70%", end: () => "+=" + distance(),
-        scrub: 0.8, invalidateOnRefresh: true,
-      },
-    });
+    initGalleryDrag();
   }
 
   /* ----------------------------------------------------------------------
@@ -679,6 +674,35 @@
   }
 
   /* ----------------------------------------------------------------------
+     HERO VIDEO — guarantee playback even in battery/low-power mode.
+     iOS Low Power Mode (and some data-saver setups) block muted autoplay, and
+     with no fallback a tap did nothing. Try to play eagerly, retry when the
+     media is ready, and — crucially — start it on the first user gesture
+     (tap/click/scroll), which the browser always honours.
+  ---------------------------------------------------------------------- */
+  function initHeroVideo() {
+    const v = $("#heroVideo");
+    if (!v) return;
+    const tryPlay = () => { const p = v.play(); if (p && p.catch) p.catch(() => {}); };
+    tryPlay();
+    v.addEventListener("loadeddata", tryPlay);
+    v.addEventListener("canplay", tryPlay);
+    // direct tap on the video is the most intuitive way to kick it off
+    v.addEventListener("click", tryPlay);
+    v.addEventListener("touchend", tryPlay);
+    // any first interaction on the page also starts it, then unbinds itself
+    const onFirst = () => {
+      tryPlay();
+      window.removeEventListener("pointerdown", onFirst);
+      window.removeEventListener("touchstart", onFirst);
+      window.removeEventListener("keydown", onFirst);
+    };
+    window.addEventListener("pointerdown", onFirst, { passive: true });
+    window.addEventListener("touchstart", onFirst, { passive: true });
+    window.addEventListener("keydown", onFirst);
+  }
+
+  /* ----------------------------------------------------------------------
      PRELOADER
   ---------------------------------------------------------------------- */
   function runPreloader(done) {
@@ -764,6 +788,7 @@
       initNav();
       initLenis();
       initHeader();
+      initHeroVideo();
       initAnimations();
       runPreloader(heroIntro);
       if (ScrollTrigger) {

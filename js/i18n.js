@@ -18,7 +18,7 @@ LB.i18n = {
 
     "hero.kicker": "Manno · Lugano",
     "hero.title1": "La Brace",
-    "hero.sub": "Dove carne e pizza diventano eccellenza",
+    "hero.sub": "Dove la carne diventa eccellenza",
     "hero.scroll": "Scorri",
     "hero.cta": "Prenota un tavolo",
 
@@ -26,7 +26,7 @@ LB.i18n = {
 
     "storia.kicker": "La nostra storia",
     "storia.title": "Il fuoco al centro di tutto",
-    "storia.p1": "La Brace nasce a Manno dalla passione di GARistogroup per la carne di altissima qualità e per il fuoco vivo. Una braceria specializzata in tagli Dry Aged e cotture alla griglia, dove ogni pezzo di carne racconta una storia di maturazione, pazienza e rispetto.",
+    "storia.p1": "La Brace nasce a Manno dalla passione per la carne di altissima qualità e per il fuoco vivo. Una braceria specializzata in tagli Dry Aged e cotture alla griglia, dove ogni pezzo di carne racconta una storia di maturazione, pazienza e rispetto.",
     "storia.p2": "Accanto alla brace, il forno della pizzeria: impasti a lunga lievitazione, farine selezionate e materie prime del territorio. Due anime, un solo obiettivo — trasformare ingredienti eccellenti in un'esperienza che resta.",
     "storia.p3": "Carne dry aged, pizza d'autore, una cantina in crescita e l'accoglienza calda del Luganese. Questa è La Brace.",
     "storia.stat1n": "9", "storia.stat1l": "Tagli Dry Aged",
@@ -39,12 +39,12 @@ LB.i18n = {
 
     "menu.kicker": "Il Menu",
     "menu.title": "Menu",
-    "menu.intro": "Tre modi di vivere La Brace. Il menu à la carte e la carta dei vini li trovi qui, online. Il menu pranzo è disponibile per il download.",
-    "menu.tab.carte": "À la carte",
+    "menu.intro": "Tre modi di vivere La Brace. Il menù alla carta e la carta dei vini li trovi qui, online. Il menu pranzo è disponibile per il download.",
+    "menu.tab.carte": "Alla carta",
     "menu.tab.vini": "Vini",
     "menu.tab.pranzo": "Pranzo",
     "menu.pranzo.title": "Menu Pranzo",
-    "menu.pranzo.text": "Ogni giorno una proposta di lavoro veloce e curata. Scarica il menu pranzo aggiornato in PDF.",
+    "menu.pranzo.text": "Il menù dedicato ai lavoratori: ogni giorno una proposta veloce e curata per la pausa pranzo. Scarica il PDF aggiornato.",
     "menu.pranzo.cta": "Scarica il menu pranzo (PDF)",
     "menu.allergens.title": "Allergeni",
     "menu.allergens.text": "I numeri sotto ogni piatto corrispondono agli allergeni presenti, come da normativa vigente. In caso di allergie o intolleranze, rivolgersi al personale.",
@@ -52,10 +52,10 @@ LB.i18n = {
     "menu.from": "da",
 
     "menuteaser.title": "Tre menu, una sola brace",
-    "menuteaser.intro": "À la carte e carta dei vini li sfogli online, con calma. Il menu pranzo è pronto da scaricare. Scegli da dove partire.",
+    "menuteaser.intro": "Alla carta e carta dei vini li sfogli online, con calma. Il menu pranzo è pronto da scaricare. Scegli da dove partire.",
     "menuteaser.carteD": "Salumi, tartare, tagli Dry Aged alla brace e pizze d'autore.",
     "menuteaser.viniD": "Rossi ticinesi, Bolgheri e grandi etichette italiane.",
-    "menuteaser.pranzoD": "La proposta di lavoro del giorno, veloce e curata. In PDF.",
+    "menuteaser.pranzoD": "Il menù dei lavoratori: la proposta del giorno, veloce e curata. In PDF.",
     "menuteaser.cta": "Apri il menu completo",
     "menuteaser.pranzoCta": "Scarica il PDF",
 
@@ -100,7 +100,7 @@ LB.i18n = {
     "footer.rights": "Tutti i diritti riservati",
     "footer.privacy": "Privacy",
     "footer.cookie": "Cookie Policy",
-    "footer.made": "GARistogroup Sagl"
+    "footer.made": "La Brace"
   },
 
   en: {
@@ -116,7 +116,7 @@ LB.i18n = {
 
     "hero.kicker": "Manno · Lugano",
     "hero.title1": "La Brace",
-    "hero.sub": "Where meat and pizza become excellence",
+    "hero.sub": "Where meat becomes excellence",
     "hero.scroll": "Scroll",
     "hero.cta": "Book a table",
 
@@ -124,7 +124,7 @@ LB.i18n = {
 
     "storia.kicker": "Our story",
     "storia.title": "Fire at the heart of it all",
-    "storia.p1": "La Brace was born in Manno from GARistogroup's passion for the finest meat and live fire. A grill house specialising in Dry Aged cuts and flame cooking, where every piece of meat tells a story of maturation, patience and respect.",
+    "storia.p1": "La Brace was born in Manno from a passion for the finest meat and live fire. A grill house specialising in Dry Aged cuts and flame cooking, where every piece of meat tells a story of maturation, patience and respect.",
     "storia.p2": "Beside the grill, the pizzeria oven: long-fermented doughs, selected flours and local ingredients. Two souls, one goal — turning excellent ingredients into an experience that stays with you.",
     "storia.p3": "Dry-aged meat, signature pizza, a growing cellar and the warm welcome of the Lugano region. This is La Brace.",
     "storia.stat1n": "9", "storia.stat1l": "Dry Aged cuts",
@@ -142,7 +142,7 @@ LB.i18n = {
     "menu.tab.vini": "Wine",
     "menu.tab.pranzo": "Lunch",
     "menu.pranzo.title": "Lunch Menu",
-    "menu.pranzo.text": "A quick, carefully crafted business lunch every day. Download the updated lunch menu as a PDF.",
+    "menu.pranzo.text": "The workers' lunch menu: a quick, well-crafted midday meal every day. Download the updated PDF.",
     "menu.pranzo.cta": "Download the lunch menu (PDF)",
     "menu.allergens.title": "Allergens",
     "menu.allergens.text": "The numbers under each dish correspond to the allergens present, as required by law. For allergies or intolerances, please ask our staff.",
@@ -153,7 +153,7 @@ LB.i18n = {
     "menuteaser.intro": "Browse the à la carte and wine list online, at your own pace. The lunch menu is ready to download. Pick where to start.",
     "menuteaser.carteD": "Charcuterie, tartare, flame-grilled Dry Aged cuts and signature pizza.",
     "menuteaser.viniD": "Ticino reds, Bolgheri and great Italian labels.",
-    "menuteaser.pranzoD": "The daily business lunch, quick and well crafted. As a PDF.",
+    "menuteaser.pranzoD": "The workers' lunch menu: the daily set meal, quick and well crafted. As a PDF.",
     "menuteaser.cta": "Open the full menu",
     "menuteaser.pranzoCta": "Download the PDF",
 
@@ -198,7 +198,7 @@ LB.i18n = {
     "footer.rights": "All rights reserved",
     "footer.privacy": "Privacy",
     "footer.cookie": "Cookie Policy",
-    "footer.made": "GARistogroup Sagl"
+    "footer.made": "La Brace"
   }
 };
 

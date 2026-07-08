@@ -307,6 +307,9 @@ LB.wine = {
 
 /* ---- EVENTI ------------------------------------------------------------- */
 LB.events = [
+  { feature: true, img: "events/evento_01.jpeg",
+    tag: { it: "Evento del mese", en: "Event of the month" },
+    title: { it: "Costate e Fiorentine a volontà", en: "Unlimited T-bones & Florentine steaks" } },
   { img: "0055_Braceria_Manno_050526.jpg",
     tag: { it: "Su prenotazione", en: "On reservation" },
     title: { it: "Cene aziendali & eventi privati", en: "Corporate dinners & private events" },
@@ -319,12 +322,6 @@ LB.events = [
     d: { it: "Assaggia i nostri impasti speciali e le creazioni fuori carta del pizzaiolo, servite a volontà.",
          en: "Taste our special doughs and the pizzaiolo's off-menu creations, served to your heart's content." },
     price: "CHF 25.–", note: { it: "min. 4 persone", en: "min. 4 people" } },
-  { img: "0668_Braceria_Manno_050526.jpg",
-    tag: { it: "All you can eat", en: "All you can eat" },
-    title: { it: "Costine a Volontà", en: "Unlimited Ribs" },
-    d: { it: "Baffe di costine del carré al forno servite a volontà con contorno di patatine. Per i più voraci.",
-         en: "Oven-baked carré ribs served without limits, with a side of fries. For the hungriest." },
-    price: "CHF 38.–" },
   { img: "0707_Braceria_Manno_050526.jpg",
     tag: { it: "Da condividere", en: "To share" },
     title: { it: "Fondue Chinoise & Bourguignonne", en: "Fondue Chinoise & Bourguignonne" },

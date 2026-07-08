@@ -9,6 +9,7 @@
   --cream-dim: #efe6d8;
   --red: #810101;
   --red-bright: #b31414;
+  --gold: #c8962c;
   --dark: #160404;
   --dark-2: #1f0707;
   --charcoal: #0c0303;
@@ -148,14 +149,14 @@ html.lenis, html.lenis body { height: auto; }
    HEADER
    ========================================================================= */
 .header {
-  position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;
+  position: fixed; top: -14px; left: 0; width: 100%; z-index: 1000;
   display: flex; align-items: center; justify-content: space-between;
-  padding: 0.4rem var(--pad);
+  padding: 0 var(--pad) 0.4rem;
   mix-blend-mode: difference;
   transition: padding 0.4s var(--ease);
 }
 .header--solid { mix-blend-mode: normal; }
-.header__logo { height: 104px; width: auto; filter: brightness(0) invert(1); }
+.header__logo { height: 150px; width: auto; filter: brightness(0) invert(1); }
 .header__nav { display: flex; gap: 2.2rem; }
 .header__nav a {
   font-family: var(--f-sub); font-size: 0.72rem; letter-spacing: 0.16em;
@@ -394,6 +395,15 @@ body.nav-open .navover__label { transform: translateY(0); }
 .ecard__price { margin-top: 1rem; font-family: var(--f-sub); font-weight: 700; font-size: 1.3rem; color: var(--cream); }
 .ecard__price span { font-size: 0.72rem; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; color: var(--cream-dim); margin-left: 0.5rem; }
 
+/* featured "event of the month": the poster carries all the info — the card
+   shows only the image plus a distinct (non-red) gold label. */
+.ecard--feature { display: block; min-height: 0; }
+.ecard--feature .ecard__img { position: static; z-index: 0; }
+.ecard--feature .ecard__img img { height: auto; }
+.ecard--feature::after { content: none; }
+.ecard--feature:hover .ecard__img img { transform: none; }
+.ecard__tag--feature { position: absolute; top: 1.4rem; left: 1.4rem; margin: 0; z-index: 3; background: var(--gold); color: #241500; box-shadow: 0 6px 22px rgba(0,0,0,0.35); }
+
 /* =========================================================================
    PRENOTA
    ========================================================================= */
@@ -430,12 +440,10 @@ body.nav-open .navover__label { transform: translateY(0); }
 .gitem img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.8s var(--ease); }
 .gitem:hover img { transform: scale(1.06); }
 
-/* desktop: gallery becomes a pinned horizontal scene (JS drives the track x) */
+/* desktop: unpinned horizontal strip — draggable + drifts on vertical scroll */
 @media (min-width: 1000px) {
-  .galleria.section { padding-top: 0; padding-bottom: 0; }
-  .galleria__stage { min-height: 100vh; justify-content: center; padding: clamp(4rem, 9vh, 7rem) 0; }
-  .galleria__track { cursor: default; flex-wrap: nowrap; will-change: transform; }
-  .galleria__drag::before { content: "→"; }
+  .galleria__stage { justify-content: center; padding: clamp(3rem, 7vh, 5rem) 0; }
+  .galleria__track { flex-wrap: nowrap; will-change: transform; }
 }
 
 .reels { max-width: var(--maxw); margin: 4rem auto 0; padding: 0 var(--pad); display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 1rem; }
