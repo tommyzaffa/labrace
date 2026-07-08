@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Log e file temporanei
+*.log
+*.tmp
+
+# Sorgenti media pesanti non usati dal sito (superano il limite 100MB di GitHub)
+# Il sito serve solo le versioni ottimizzate in assets/img/web, assets/img/thumb, assets/video/web
+assets/video/hero.mp4
+assets/video/web/*-orig.mp4

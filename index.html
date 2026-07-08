@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Brace — Ristorante · Braceria · Pizzeria · Manno, Lugano</title>
+  <meta name="description" content="La Brace a Manno (Lugano): braceria specializzata in carne dry aged e alla griglia, pizzeria d'autore e cantina. Cene di gruppo, all you can eat, pranzo di lavoro. Prenota un tavolo." />
+  <meta name="keywords" content="carne, pizza, dry aged, braceria, pizzeria, Manno, Lugano, Ticino, Luganese, Malcantone, pranzo di lavoro, cene di gruppo, all you can eat, cene aziendali" />
+  <meta name="theme-color" content="#160404" />
+  <link rel="icon" href="assets/logo/3.png" />
+  <meta property="og:title" content="La Brace — dove carne e pizza diventano eccellenza" />
+  <meta property="og:description" content="Braceria, dry aged e pizzeria a Manno, Lugano." />
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:image" content="assets/img/web/0668_Braceria_Manno_050526.jpg" />
+
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="is-loading">
+
+  <!-- ===================== PRELOADER ===================== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__inner">
+      <div class="preloader__logo">
+        <span class="pl-line"><span class="pl-word" data-word="LA">LA</span></span>
+        <span class="pl-line"><span class="pl-word" data-word="BRACE">BRACE</span></span>
+      </div>
+      <div class="preloader__tag" data-i18n="preloader.tag">Ristorante · Braceria · Pizzeria</div>
+      <div class="preloader__bar"><span class="preloader__fill" id="plFill"></span></div>
+    </div>
+  </div>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header" id="header">
+    <a href="#home" class="header__brand" data-scroll>
+      <img src="assets/logo/2.png" alt="La Brace" class="header__logo" />
+    </a>
+    <nav class="header__nav">
+      <a href="#storia" data-scroll data-i18n="nav.storia">Storia</a>
+      <a href="menu.html" data-i18n="nav.menu">Menu</a>
+      <a href="#eventi" data-scroll data-i18n="nav.eventi">Eventi</a>
+      <a href="#galleria" data-scroll data-i18n="nav.galleria">Galleria</a>
+      <a href="#contatti" data-scroll data-i18n="nav.contatti">Contatti</a>
+    </nav>
+    <div class="header__right">
+      <div class="lang" id="lang">
+        <button data-lang="it" class="is-active">IT</button>
+        <span>/</span>
+        <button data-lang="en">EN</button>
+      </div>
+      <a href="#prenota" data-scroll class="btn btn--sm header__cta" data-i18n="nav.prenota">Prenota un tavolo</a>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== FULLSCREEN NAV ===================== -->
+  <div class="navover" id="navover">
+    <div class="navover__grid">
+      <a href="#home" data-scroll class="navover__item"><span class="navover__num">00</span><span class="navover__label" data-i18n="nav.home">Home</span></a>
+      <a href="#storia" data-scroll class="navover__item"><span class="navover__num">01</span><span class="navover__label" data-i18n="nav.storia">Storia</span></a>
+      <a href="menu.html" class="navover__item"><span class="navover__num">02</span><span class="navover__label" data-i18n="nav.menu">Menu</span></a>
+      <a href="#eventi" data-scroll class="navover__item"><span class="navover__num">03</span><span class="navover__label" data-i18n="nav.eventi">Eventi</span></a>
+      <a href="#galleria" data-scroll class="navover__item"><span class="navover__num">04</span><span class="navover__label" data-i18n="nav.galleria">Galleria</span></a>
+      <a href="#contatti" data-scroll class="navover__item"><span class="navover__num">05</span><span class="navover__label" data-i18n="nav.contatti">Contatti</span></a>
+    </div>
+    <div class="navover__foot">
+      <span>Via Cantonale 2B · 6928 Manno</span>
+      <a href="tel:+41916061000">+41 91 606 10 00</a>
+    </div>
+  </div>
+
+  <main id="scroll">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home">
+      <div class="hero__media">
+        <video id="heroVideo" class="hero__video" autoplay muted loop playsinline
+               poster="assets/video/web/hero-poster.jpg?v=2">
+          <source src="assets/video/web/hero-1080.mp4?v=2" type="video/mp4" media="(min-width:768px)" />
+          <source src="assets/video/web/hero-720.mp4?v=2" type="video/mp4" />
+        </video>
+        <div class="hero__overlay"></div>
+      </div>
+      <div class="hero__content">
+        <div class="hero__kicker" data-i18n="hero.kicker">Manno · Lugano</div>
+        <h1 class="hero__title">
+          <span class="hero__line" data-i18n="hero.title1">La Brace</span>
+        </h1>
+        <p class="hero__sub" data-i18n="hero.sub">Dove carne e pizza diventano eccellenza</p>
+        <a href="#prenota" data-scroll class="btn hero__cta" data-i18n="hero.cta">Prenota un tavolo</a>
+      </div>
+      <a href="#storia" data-scroll class="hero__scroll">
+        <span data-i18n="hero.scroll">Scorri</span>
+        <span class="hero__scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- ===================== MARQUEE ===================== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span data-i18n="marquee">Dry Aged · Braceria · Pizzeria · Carne alla brace · Vini · Manno Lugano ·</span>
+        <span data-i18n="marquee">Dry Aged · Braceria · Pizzeria · Carne alla brace · Vini · Manno Lugano ·</span>
+        <span data-i18n="marquee">Dry Aged · Braceria · Pizzeria · Carne alla brace · Vini · Manno Lugano ·</span>
+      </div>
+    </div>
+
+    <!-- ===================== STORIA ===================== -->
+    <section class="storia section" id="storia">
+      <div class="storia__head">
+        <span class="kicker" data-i18n="storia.kicker">La nostra storia</span>
+        <h2 class="display" data-split="up" data-i18n="storia.title">Il fuoco al centro di tutto</h2>
+      </div>
+      <div class="storia__body">
+        <div class="storia__media">
+          <div class="storia__img" data-parallax data-img-reveal="up">
+            <img src="assets/img/web/0707_Braceria_Manno_050526.jpg" alt="Carne alla brace" loading="lazy" />
+          </div>
+          <img class="storia__graphic" data-parallax-graphic src="assets/graphics/cut1.png" alt="" aria-hidden="true" />
+        </div>
+        <div class="storia__text">
+          <p data-reveal data-i18n="storia.p1"></p>
+          <p data-reveal data-i18n="storia.p2"></p>
+          <p data-reveal data-i18n="storia.p3"></p>
+          <div class="storia__stats">
+            <div class="stat"><span class="stat__n" data-count data-i18n="storia.stat1n">9</span><span class="stat__l" data-i18n="storia.stat1l">Tagli Dry Aged</span></div>
+            <div class="stat"><span class="stat__n" data-count data-i18n="storia.stat2n">100%</span><span class="stat__l" data-i18n="storia.stat2l">Carne selezionata</span></div>
+            <div class="stat"><span class="stat__n" data-count data-i18n="storia.stat3n">2026</span><span class="stat__l" data-i18n="storia.stat3l">Nel cuore di Manno</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== DRY AGED (immersive dark) ===================== -->
+    <section class="dry" id="dryage" data-curtain="cream">
+      <div class="dry__bg" data-parallax-bg>
+        <img src="assets/img/web/0668_Braceria_Manno_050526.jpg" alt="Carne Dry Aged" />
+      </div>
+      <div class="dry__inner">
+        <span class="kicker kicker--light" data-i18n="dry.kicker">Dry Aged</span>
+        <h2 class="display dry__title" data-split="left" data-i18n="dry.title">L'espressione più alta della carne rossa</h2>
+        <p class="dry__lead" id="dryLead"></p>
+        <div class="dry__table" id="dryTable"></div>
+        <div class="dry__from" id="dryFrom"></div>
+        <a href="menu.html" class="btn btn--ghost" data-i18n="dry.cta">Scopri il menu</a>
+      </div>
+      <img class="deco deco--dry" data-parallax-graphic src="assets/graphics/cut6.png" alt="" aria-hidden="true" loading="lazy" />
+    </section>
+
+    <!-- ===================== MENU TEASER ===================== -->
+    <section class="menuteaser section" id="menu" data-curtain="dark">
+      <div class="menuteaser__head">
+        <span class="kicker" data-i18n="menu.kicker">Il Menu</span>
+        <h2 class="display" data-split="up" data-i18n="menuteaser.title">Tre menu, una sola brace</h2>
+        <p class="menuteaser__intro" data-reveal data-i18n="menuteaser.intro"></p>
+      </div>
+      <div class="menuteaser__cards">
+        <a href="menu.html#carte" class="mtcard" data-img-reveal="up">
+          <div class="mtcard__img"><img src="assets/img/web/0707_Braceria_Manno_050526.jpg" alt="À la carte" loading="lazy" /></div>
+          <div class="mtcard__body">
+            <span class="mtcard__idx">01</span>
+            <h3 class="mtcard__title" data-i18n="menu.tab.carte">À la carte</h3>
+            <p class="mtcard__desc" data-i18n="menuteaser.carteD"></p>
+            <span class="mtcard__go" data-i18n="menuteaser.cta">Apri il menu completo</span>
+          </div>
+        </a>
+        <a href="menu.html#vini" class="mtcard" data-img-reveal="up">
+          <div class="mtcard__img"><img src="assets/img/web/0339_Braceria_Manno_050526.jpg" alt="Vini" loading="lazy" /></div>
+          <div class="mtcard__body">
+            <span class="mtcard__idx">02</span>
+            <h3 class="mtcard__title" data-i18n="menu.tab.vini">Vini</h3>
+            <p class="mtcard__desc" data-i18n="menuteaser.viniD"></p>
+            <span class="mtcard__go" data-i18n="menuteaser.cta">Apri il menu completo</span>
+          </div>
+        </a>
+        <a href="docs/MENU_PRANZO_2026_28-2.pdf" download class="mtcard mtcard--pdf" data-img-reveal="up">
+          <div class="mtcard__img"><img src="assets/img/web/0668_Braceria_Manno_050526.jpg" alt="Menu pranzo" loading="lazy" /></div>
+          <div class="mtcard__body">
+            <span class="mtcard__idx">03</span>
+            <h3 class="mtcard__title" data-i18n="menu.pranzo.title">Menu Pranzo</h3>
+            <p class="mtcard__desc" data-i18n="menuteaser.pranzoD"></p>
+            <span class="mtcard__go" data-i18n="menuteaser.pranzoCta">Scarica il PDF</span>
+          </div>
+        </a>
+      </div>
+      <img class="deco deco--menuteaser" data-parallax-graphic src="assets/graphics/cut3.png" alt="" aria-hidden="true" loading="lazy" />
+    </section>
+
+    <!-- ===================== EVENTI ===================== -->
+    <section class="eventi section" id="eventi" data-curtain="cream">
+      <div class="eventi__head">
+        <span class="kicker" data-i18n="eventi.kicker">Eventi</span>
+        <h2 class="display" data-split="up" data-i18n="eventi.title">Occasioni da vivere alla brace</h2>
+        <p class="eventi__intro" data-i18n="eventi.intro"></p>
+      </div>
+      <div class="eventi__grid" id="eventiGrid"></div>
+      <img class="deco deco--eventi" data-parallax-graphic src="assets/graphics/cut2.png" alt="" aria-hidden="true" loading="lazy" />
+    </section>
+
+    <!-- ===================== PRENOTA ===================== -->
+    <section class="prenota" id="prenota" data-curtain="cream">
+      <div class="prenota__inner">
+        <span class="kicker kicker--light" data-i18n="prenota.kicker">Prenotazioni</span>
+        <h2 class="display prenota__title" data-split="up" data-i18n="prenota.title">Prenota il tuo tavolo</h2>
+        <p class="prenota__text" data-i18n="prenota.text"></p>
+        <a href="https://forms.pienissimo.com/info-client" target="_blank" rel="noopener" class="btn btn--big" data-i18n="prenota.cta">Prenota ora</a>
+        <div class="prenota__call">
+          <span data-i18n="prenota.call">Oppure chiamaci</span>
+          <a href="tel:+41916061000">+41 91 606 10 00</a>
+        </div>
+      </div>
+      <img class="deco deco--prenota" data-parallax-graphic src="assets/graphics/cut4.png" alt="" aria-hidden="true" loading="lazy" />
+    </section>
+
+    <!-- ===================== GALLERIA ===================== -->
+    <section class="galleria section" id="galleria" data-curtain="dark">
+      <div class="galleria__stage">
+        <div class="galleria__head">
+          <span class="kicker" data-i18n="galleria.kicker">Galleria</span>
+          <h2 class="display" data-split="up" data-i18n="galleria.title">Uno sguardo dentro La Brace</h2>
+          <span class="galleria__drag" data-i18n="galleria.drag">Trascina per esplorare</span>
+        </div>
+        <div class="galleria__track" id="galTrack"></div>
+      </div>
+      <div class="reels" id="reels"></div>
+      <div class="galfollow" data-reveal>
+        <span class="kicker" data-i18n="galleria.followKicker">Seguici</span>
+        <a class="galfollow__handle" href="https://www.instagram.com/la_brace_manno" target="_blank" rel="noopener">@la_brace_manno</a>
+        <p class="galfollow__text" data-i18n="galleria.followText">Segui La Brace sui social per novità, eventi e la brace di ogni giorno.</p>
+        <div class="social social--lg">
+          <a href="https://www.instagram.com/la_brace_manno" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/share/1TC5bbUdbs/" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.linkedin.com/company/ristorante-la-brace/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTATTI ===================== -->
+    <section class="contatti section" id="contatti" data-curtain="cream">
+      <div class="contatti__head">
+        <span class="kicker" data-i18n="contatti.kicker">Contatti</span>
+        <h2 class="display" data-split="up" data-i18n="contatti.title">Vieni a trovarci</h2>
+      </div>
+      <div class="contatti__grid">
+        <div class="contatti__info">
+          <div class="cblock">
+            <span class="cblock__label" data-i18n="contatti.addr.label">Indirizzo</span>
+            <a href="https://maps.google.com/?q=Via+Cantonale+2B+6928+Manno" target="_blank" rel="noopener">
+              Via Cantonale 2B<br />6928 Manno, Ticino (CH)
+            </a>
+          </div>
+          <div class="cblock">
+            <span class="cblock__label" data-i18n="contatti.contact.label">Contatti</span>
+            <a href="tel:+41916061000">+41 91 606 10 00</a>
+            <a href="tel:+41793176000">+41 79 317 60 00</a>
+            <a href="mailto:info@labrace.ch">info@labrace.ch</a>
+          </div>
+          <div class="cblock">
+            <span class="cblock__label" data-i18n="contatti.hours.label">Orari</span>
+            <ul class="hours" id="hours"></ul>
+          </div>
+          <div class="cblock">
+            <span class="cblock__label" data-i18n="contatti.social">Seguici</span>
+            <div class="social">
+              <a href="https://www.instagram.com/la_brace_manno" target="_blank" rel="noopener">Instagram</a>
+              <a href="https://www.facebook.com/share/1TC5bbUdbs/" target="_blank" rel="noopener">Facebook</a>
+              <a href="https://www.linkedin.com/company/ristorante-la-brace/" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+          </div>
+          <a href="#prenota" data-scroll class="btn contatti__cta" data-i18n="contatti.cta">Prenota un tavolo</a>
+        </div>
+        <div class="contatti__map" id="map" data-map-src="https://www.google.com/maps?q=Via%20Cantonale%202B%2C%206928%20Manno&output=embed">
+          <div class="mapconsent" id="mapConsent">
+            <p class="mapconsent__txt" data-i18n="map.notice">Per mostrare la mappa carichiamo Google Maps, che può impostare cookie e trasferire dati a Google (anche negli USA).</p>
+            <button type="button" class="btn btn--sm mapconsent__btn" id="mapConsentBtn" data-i18n="map.load">Carica la mappa</button>
+            <a class="mapconsent__link" href="https://www.google.com/maps/place/Via+Cantonale+2B,+6928+Manno" target="_blank" rel="noopener" data-i18n="map.open">Apri in Google Maps →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer__big" aria-hidden="true">LA&nbsp;BRACE</div>
+    <div class="footer__row">
+      <span data-i18n="footer.tagline">La Brace… dove carne e pizza diventano eccellenza</span>
+      <div class="footer__links">
+        <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
+        <a href="privacy.html#cookie" data-i18n="footer.cookie">Cookie Policy</a>
+      </div>
+    </div>
+    <div class="footer__base">
+      <span>© <span id="year"></span> <span data-i18n="footer.made">GARistogroup Sagl</span> · <span data-i18n="footer.rights">Tutti i diritti riservati</span></span>
+      <span>www.labrace.ch</span>
+    </div>
+  </footer>
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
