@@ -100,7 +100,8 @@ LB.i18n = {
     "footer.rights": "Tutti i diritti riservati",
     "footer.privacy": "Privacy",
     "footer.cookie": "Cookie Policy",
-    "footer.made": "La Brace"
+    "footer.made": "La Brace",
+    "footer.credit": "Sito creato e sviluppato da"
   },
 
   en: {
@@ -198,7 +199,8 @@ LB.i18n = {
     "footer.rights": "All rights reserved",
     "footer.privacy": "Privacy",
     "footer.cookie": "Cookie Policy",
-    "footer.made": "La Brace"
+    "footer.made": "La Brace",
+    "footer.credit": "Website designed and developed by"
   }
 };
 
