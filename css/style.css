@@ -446,7 +446,7 @@ body.nav-open .navover__label { transform: translateY(0); }
   .galleria__track { flex-wrap: nowrap; will-change: transform; }
 }
 
-.reels { max-width: var(--maxw); margin: 4rem auto 0; padding: 0 var(--pad); display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 1rem; }
+.reels { max-width: var(--maxw); margin: 4rem auto 0; padding: 0 var(--pad); display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1rem; }
 .reels::-webkit-scrollbar { display: none; }
 .reel { position: relative; aspect-ratio: 9/16; overflow: hidden; border-radius: 6px; background: var(--dark); }
 .reel video { width: 100%; height: 100%; object-fit: cover; }

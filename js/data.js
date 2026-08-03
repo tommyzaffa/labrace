@@ -411,5 +411,5 @@ LB.gallery = [
 /* ---- REELS (video verticali) -------------------------------------------- */
 LB.reels = [
   "Reel_1_La_Brace_Manno","Reel_2_La_Brace_Manno","Reel_3_La_Brace_Manno",
-  "Reel_4_La_Brace_Manno","Reel_7_La_Brace_Manno","Reel_8_La_Brace_Manno"
+  "Reel_7_La_Brace_Manno","Reel_8_La_Brace_Manno"
 ];
