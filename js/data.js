@@ -359,6 +359,7 @@ LB.wine = {
       title: { it: "Lombardia", en: "Lombardy" },
       items: [
         { name: "I Frati Lugana — Ca' dei Frati", d: { it: "Bianco del Garda fresco e sapido, con agrumi e mandorla. Uno dei bianchi più amati d'Italia.", en: "A fresh, savoury Garda white with citrus and almond. One of Italy's best-loved whites." }, p: "54" },
+        { name: "Rosa dei Frati — Ca' dei Frati", d: { it: "Rosato del Garda dal colore tenue, tra fragolina di bosco e fiori. Fresco, elegante, bevuto volentieri tutta la sera.", en: "A pale Garda rosé, between wild strawberry and flowers. Fresh, elegant and easy to enjoy all evening." }, p: "53" },
         { name: "Ronchedone — Ca' dei Frati", d: { it: "Rosso pieno e generoso, con frutta scura e spezie dolci. Morbido ma con carattere.", en: "A full, generous red with dark fruit and sweet spice. Soft, yet with character." }, p: "53" },
         { name: "Corte del Lupo Rosso — Ca' del Bosco", d: { it: "Fine ed equilibrato, tra ciliegia e note tostate. Beve bene dall'antipasto alla bistecca.", en: "Fine and balanced, between cherry and toasty notes. It drinks well from starter to steak." }, p: "65" }
       ]
@@ -402,7 +403,7 @@ LB.wine = {
       title: { it: "Sardegna", en: "Sardinia" },
       items: [
         { name: "Serenata Vermentino di Gallura — Silvio Carta", d: { it: "Bianco sardo fresco e salino, con agrumi e fiori bianchi. Profuma di mare.", en: "A fresh, saline Sardinian white with citrus and white flowers. It smells of the sea." }, p: "42" },
-        { name: "Monica di Sardegna", d: { it: "Rosso semplice e sincero, con frutta rossa e una nota di erbe mediterranee. Beva scorrevole.", en: "A simple, honest red with red fruit and a Mediterranean herb note. Very easy drinking." }, p: "45" },
+        { name: "Monica di Sardegna — Pò Tui", d: { it: "Rosso semplice e sincero, con frutta rossa e una nota di erbe mediterranee. Beva scorrevole.", en: "A simple, honest red with red fruit and a Mediterranean herb note. Very easy drinking." }, p: "45" },
         { name: "Cagnulari — Pò Tui", d: { it: "Vitigno raro del nord Sardegna: fruttato, speziato e piacevolmente rustico.", en: "A rare northern-Sardinian grape: fruity, spicy and pleasantly rustic." }, p: "48" },
         { name: "Barrua — Agricola Punica", d: { it: "Carignano di grande carattere, tra mora, spezie e macchia. Potente ma equilibrato.", en: "A Carignano with real character, between blackberry, spice and scrub. Powerful yet balanced." }, p: "72" },
         { name: "Turriga — Argiolas", d: { it: "Il grande rosso della Sardegna: concentrato, speziato, con un finale lunghissimo.", en: "Sardinia's great red: concentrated, spicy, with a very long finish." }, p: "140" }
