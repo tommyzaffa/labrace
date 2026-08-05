@@ -318,46 +318,122 @@ LB.dryage = {
   ]
 };
 
-/* ---- CARTA VINI (contenuti provvisori, realistici) ---------------------- */
+/* ---- CARTA VINI --------------------------------------------------------- */
 LB.wine = {
   note: {
-    it: "Selezione in aggiornamento — una piccola parte della nostra cantina. Chiedete in sala per l'annata e i suggerimenti dello chef.",
-    en: "Selection being updated — a small part of our cellar. Ask our staff for the vintage and the chef's pairing."
+    it: "La nostra cantina, per regione. Chiedete in sala l'annata in servizio e l'abbinamento consigliato con i tagli alla brace.",
+    en: "Our cellar, region by region. Ask our staff for the vintage currently poured and the best match for your cut off the grill."
   },
   cats: [
     {
-      title: { it: "Rossi del Ticino", en: "Ticino Reds" },
+      title: { it: "Bollicine", en: "Sparkling" },
       items: [
-        { name: "Merlot del Ticino DOC — Gialdi", d: { it: "Speziato, morbido, ciliegia matura", en: "Spicy, soft, ripe cherry" }, p: "52" },
-        { name: "Rovere Riserva — Vinattieri", d: { it: "Merlot in barrique, struttura e vaniglia", en: "Barrique Merlot, structure and vanilla" }, p: "68" },
-        { name: "Ronco Bain — Cantina Kopp", d: { it: "Elegante, frutti rossi e tabacco", en: "Elegant, red fruit and tobacco" }, p: "74" },
-        { name: "Sassi Grossi — Gialdi", d: { it: "Grande Merlot ticinese, lungo e profondo", en: "Great Ticino Merlot, long and deep" }, p: "95" }
+        { name: "Dom Pérignon Vintage — Dom Pérignon", d: { it: "Lo Champagne che tutti riconoscono: bollicina finissima, note di agrumi e pasticceria. Due annate in cantina, per le occasioni che contano.", en: "The Champagne everyone knows: ultra-fine bubbles, citrus and pastry notes. Two vintages in the cellar, for the occasions that matter." }, p: "320 / 350" },
+        { name: "Cuvée Prestige 47ª Edizione — Ca' del Bosco", d: { it: "Franciacorta di grande equilibrio, fresco e cremoso allo stesso tempo. Perfetto per iniziare la serata.", en: "A beautifully balanced Franciacorta, fresh and creamy at once. The perfect way to open the evening." }, p: "75" },
+        { name: "Franciacorta Brut — La Montina", d: { it: "Bollicina schietta e piacevole, con profumi di pane appena sfornato e mela. Facile da bere, sempre.", en: "Straightforward, easy-going bubbles with fresh bread and apple aromas. Always a pleasure." }, p: "60" },
+        { name: "Franciacorta Batudé Brut — Tenuta Ambrosini", d: { it: "Fine e agrumato, con una bella spinta fresca. Ottimo con i crudi e le fritture.", en: "Fine and citrusy, with a lovely fresh drive. Great with raw dishes and fried starters." }, p: "59" },
+        { name: "Franciacorta Brut — Antica Fratta", d: { it: "Elegante e delicato, tra fiori bianchi e agrumi. Un aperitivo che sa anche accompagnare tutto il pasto.", en: "Elegant and delicate, between white flowers and citrus. An aperitif that can also carry the whole meal." }, p: "59" },
+        { name: "Prosecco Extra Dry — Casalforte", d: { it: "Fresco, fruttato e leggermente morbido. La bollicina immediata per brindare senza pensieri.", en: "Fresh, fruity and gently soft. The easy bubble for a carefree toast." }, p: "40" }
       ]
     },
     {
-      title: { it: "Bolgheri & Toscana", en: "Bolgheri & Tuscany" },
+      title: { it: "Trentino Alto Adige", en: "Trentino Alto Adige" },
       items: [
-        { name: "Bolgheri Rosso DOC — Le Macchiole", d: { it: "Cabernet e Merlot, mora e macchia mediterranea", en: "Cabernet and Merlot, blackberry and Mediterranean scrub" }, p: "78" },
-        { name: "Guado al Tasso — Antinori", d: { it: "Potente ed elegante, frutta scura e spezie", en: "Powerful and elegant, dark fruit and spice" }, p: "165" },
-        { name: "Brunello di Montalcino — Banfi", d: { it: "Sangiovese, tannini fini e lunga persistenza", en: "Sangiovese, fine tannins and long finish" }, p: "120" },
-        { name: "Tignanello — Antinori", d: { it: "Il super-tuscan iconico, complesso e vellutato", en: "The iconic super-tuscan, complex and velvety" }, p: "175" }
+        { name: "Sauvignon — Kettmeir", d: { it: "Bianco profumatissimo, con note di salvia e frutta esotica. Fresco e croccante dal primo sorso.", en: "A wonderfully aromatic white, with sage and tropical fruit notes. Fresh and crisp from the first sip." }, p: "42" },
+        { name: "Pinot Nero Riserva Vigna Maso Reiner — Kettmeir", d: { it: "Rosso elegante e sottile, tra lampone e spezie dolci. Leggero nel corpo ma pieno di carattere.", en: "An elegant, slender red, between raspberry and sweet spice. Light in body but full of character." }, p: "65" }
       ]
     },
     {
-      title: { it: "Grandi Rossi d'Italia", en: "Great Italian Reds" },
+      title: { it: "Ticino", en: "Ticino" },
       items: [
-        { name: "Barolo DOCG — Pio Cesare", d: { it: "Nebbiolo, rosa, catrame e liquirizia", en: "Nebbiolo, rose, tar and liquorice" }, p: "110" },
-        { name: "Amarone della Valpolicella — Allegrini", d: { it: "Ricco, appassito, frutta in confettura", en: "Rich, dried-grape, jammy fruit" }, p: "98" },
-        { name: "Primitivo di Manduria — Gianfranco Fino", d: { it: "Caldo, prugna e cioccolato", en: "Warm, plum and chocolate" }, p: "72" }
+        { name: "La Vispa Teresa Rosé — Agriloro", d: { it: "Rosato ticinese fresco e succoso, con profumi di fragolina e pesca. Bello anche d'estate in terrazza.", en: "A fresh, juicy Ticino rosé with wild strawberry and peach aromas. Lovely on the terrace in summer." }, p: "45" },
+        { name: "Gewürztraminer — Agriloro", d: { it: "Bianco intenso e aromatico, tra rosa e litchi. Sorprendente con formaggi e piatti speziati.", en: "An intense, aromatic white, between rose and lychee. Surprising with cheeses and spiced dishes." }, p: "48" },
+        { name: "Alinda Merlot — Agriloro", d: { it: "Il Merlot ticinese di tutti i giorni: morbido, fruttato, senza fronzoli. Va d'accordo con la brace.", en: "The everyday Ticino Merlot: soft, fruity, no frills. It gets along with the grill." }, p: "38" },
+        { name: "Oro Rosso — Agriloro", d: { it: "Rosso caldo e avvolgente, con frutta matura e una nota di cacao. Un classico della casa.", en: "A warm, enveloping red with ripe fruit and a hint of cocoa. A house classic." }, p: "45" },
+        { name: "Pinot Nero — Agriloro", d: { it: "Delicato e profumato, con frutti rossi e una punta di sottobosco. Elegante senza pesare.", en: "Delicate and fragrant, with red berries and a touch of forest floor. Elegant without weighing in." }, p: "54" },
+        { name: "Casimiro — Agriloro", d: { it: "Merlot di razza, affinato in legno: struttura, spezie e un finale lungo. Nato per le carni rosse.", en: "A thoroughbred Merlot aged in wood: structure, spice and a long finish. Born for red meat." }, p: "60" },
+        { name: "Sottobosco — Agriloro", d: { it: "Profondo e complesso, tra mora, tabacco e note balsamiche. Il compagno ideale di una dry aged.", en: "Deep and complex, between blackberry, tobacco and balsamic notes. The ideal partner for a dry aged cut." }, p: "75" }
       ]
     },
     {
-      title: { it: "Bianchi & Bollicine", en: "Whites & Sparkling" },
+      title: { it: "Lombardia", en: "Lombardy" },
       items: [
-        { name: "Bianco del Ticino — Chardonnay", d: { it: "Fresco, agrumi e nota minerale", en: "Fresh, citrus and mineral note" }, p: "48" },
-        { name: "Gavi di Gavi DOCG — La Scolca", d: { it: "Cortese, secco e sapido", en: "Cortese, dry and savoury" }, p: "56" },
-        { name: "Franciacorta Brut — Ca' del Bosco", d: { it: "Bollicina fine, crosta di pane e agrumi", en: "Fine bubbles, brioche and citrus" }, p: "85" },
-        { name: "Champagne Brut — Réserve", d: { it: "Elegante e persistente", en: "Elegant and persistent" }, p: "130" }
+        { name: "I Frati Lugana — Ca' dei Frati", d: { it: "Bianco del Garda fresco e sapido, con agrumi e mandorla. Uno dei bianchi più amati d'Italia.", en: "A fresh, savoury Garda white with citrus and almond. One of Italy's best-loved whites." }, p: "54" },
+        { name: "Ronchedone — Ca' dei Frati", d: { it: "Rosso pieno e generoso, con frutta scura e spezie dolci. Morbido ma con carattere.", en: "A full, generous red with dark fruit and sweet spice. Soft, yet with character." }, p: "53" },
+        { name: "Corte del Lupo Rosso — Ca' del Bosco", d: { it: "Fine ed equilibrato, tra ciliegia e note tostate. Beve bene dall'antipasto alla bistecca.", en: "Fine and balanced, between cherry and toasty notes. It drinks well from starter to steak." }, p: "65" }
+      ]
+    },
+    {
+      title: { it: "Piemonte", en: "Piedmont" },
+      items: [
+        { name: "Gattinara 0,5 l — Travaglini", d: { it: "Nebbiolo di montagna in mezza bottiglia: elegante, con viola e spezie. La misura giusta a pranzo.", en: "Mountain Nebbiolo in a half bottle: elegant, with violet and spice. The right size at lunch." }, p: "37.50" },
+        { name: "Gattinara — Travaglini", d: { it: "Nebbiolo dell'Alto Piemonte, austero e raffinato. Tannino fine e un finale che non finisce mai.", en: "Upper-Piedmont Nebbiolo, austere and refined. Fine tannin and a finish that never ends." }, p: "54" },
+        { name: "Montebruna — Braida", d: { it: "Barbera d'Asti succosa e vivace, tutta amarena e freschezza. Perfetta con salumi e carni alla griglia.", en: "A juicy, lively Barbera d'Asti, all sour cherry and freshness. Perfect with cured meats and grilled cuts." }, p: "56" },
+        { name: "Barolo Bricat — Manzone", d: { it: "Il re dei rossi piemontesi: rosa, catrame e liquirizia, con una struttura importante.", en: "The king of Piedmont reds: rose, tar and liquorice, with serious structure." }, p: "79" },
+        { name: "Bricco dell'Uccellone — Braida", d: { it: "La Barbera più famosa d'Italia, affinata in barrique. Densa, vellutata, da bottiglia importante.", en: "Italy's most famous Barbera, aged in barriques. Dense, velvety, a real special-occasion bottle." }, p: "120" }
+      ]
+    },
+    {
+      title: { it: "Veneto", en: "Veneto" },
+      items: [
+        { name: "From Black to White — Zýmē", d: { it: "Bianco originale e sapido, con frutta gialla e una bella spinta minerale. Da provare.", en: "An original, savoury white with yellow fruit and a fine mineral drive. Worth discovering." }, p: "42" },
+        { name: "Campofiorin — Masi", d: { it: "Il \"baby Amarone\": ciliegia sotto spirito e spezie, morbido e sempre piacevole.", en: "The \"baby Amarone\": cherry in spirit and spice, soft and always enjoyable." }, p: "42" },
+        { name: "Valpolicella Classico Superiore — Zýmē", d: { it: "Valpolicella di grande finezza, tra frutta rossa e erbe. Fresco ma con profondità.", en: "A Valpolicella of great finesse, between red fruit and herbs. Fresh, yet deep." }, p: "78" },
+        { name: "60 20 20 — Zýmē", d: { it: "Un blend di uve diverse che gioca su frutta scura e spezie. Beva sorprendente e golosa.", en: "A blend of different grapes playing on dark fruit and spice. A surprising, moreish drink." }, p: "79" },
+        { name: "Costasera Amarone — Masi", d: { it: "Amarone classico: uve appassite, frutta in confettura e cioccolato. Caldo e avvolgente.", en: "Classic Amarone: dried grapes, jammy fruit and chocolate. Warm and enveloping." }, p: "79" },
+        { name: "Kairos — Zýmē", d: { it: "Quindici varietà in un'unica bottiglia, complessa e affascinante. Un vino da raccontare.", en: "Fifteen varieties in one bottle, complex and captivating. A wine with a story to tell." }, p: "120" }
+      ]
+    },
+    {
+      title: { it: "Toscana", en: "Tuscany" },
+      items: [
+        { name: "Insoglio del Cinghiale — Campo di Sasso", d: { it: "Toscano moderno e fruttato, morbido e immediato. Piace praticamente a tutti.", en: "A modern, fruity Tuscan, soft and immediate. Pretty much everyone likes it." }, p: "64" },
+        { name: "Le Volte — Ornellaia", d: { it: "L'ingresso nel mondo Ornellaia: frutta scura, spezie dolci e tannini gentili.", en: "The entry point into the Ornellaia world: dark fruit, sweet spice and gentle tannins." }, p: "65" },
+        { name: "Il Bruciato — Guado al Tasso", d: { it: "Bolgheri generoso e succoso, con mora e macchia mediterranea. Nato per la bistecca.", en: "A generous, juicy Bolgheri with blackberry and Mediterranean scrub. Born for steak." }, p: "66" },
+        { name: "Lucente — Tenuta Luce", d: { it: "Elegante e vellutato, tra prugna e vaniglia. Morbidezza toscana allo stato puro.", en: "Elegant and velvety, between plum and vanilla. Tuscan softness at its purest." }, p: "75" },
+        { name: "Brunello di Montalcino — Banfi", d: { it: "Sangiovese in purezza, tannini finissimi e lunga persistenza. Un grande classico italiano.", en: "Pure Sangiovese, super-fine tannins and a long finish. A great Italian classic." }, p: "75" },
+        { name: "Guidalberto — Tenuta San Guido", d: { it: "Il fratello minore del Sassicaia: fine, fresco, con frutta rossa e una nota di grafite.", en: "Sassicaia's little brother: fine, fresh, with red fruit and a graphite note." }, p: "85" },
+        { name: "Serre Nuove dell'Ornellaia — Ornellaia", d: { it: "Bolgheri di classe, tra frutti neri, cacao e spezie. Struttura e eleganza insieme.", en: "A classy Bolgheri, between black fruit, cocoa and spice. Structure and elegance together." }, p: "90" },
+        { name: "Tignanello — Antinori", d: { it: "Il super-tuscan che ha cambiato la storia del vino italiano. Complesso, profondo, vellutato.", en: "The super-Tuscan that changed the history of Italian wine. Complex, deep, velvety." }, p: "190" },
+        { name: "Sassicaia — Tenuta San Guido", d: { it: "L'icona di Bolgheri, riconosciuta in tutto il mondo. Eleganza rara e finale infinito.", en: "The icon of Bolgheri, recognised worldwide. Rare elegance and an endless finish." }, p: "350" }
+      ]
+    },
+    {
+      title: { it: "Sardegna", en: "Sardinia" },
+      items: [
+        { name: "Serenata Vermentino di Gallura — Silvio Carta", d: { it: "Bianco sardo fresco e salino, con agrumi e fiori bianchi. Profuma di mare.", en: "A fresh, saline Sardinian white with citrus and white flowers. It smells of the sea." }, p: "42" },
+        { name: "Monica di Sardegna", d: { it: "Rosso semplice e sincero, con frutta rossa e una nota di erbe mediterranee. Beva scorrevole.", en: "A simple, honest red with red fruit and a Mediterranean herb note. Very easy drinking." }, p: "45" },
+        { name: "Cagnulari — Pò Tui", d: { it: "Vitigno raro del nord Sardegna: fruttato, speziato e piacevolmente rustico.", en: "A rare northern-Sardinian grape: fruity, spicy and pleasantly rustic." }, p: "48" },
+        { name: "Barrua — Agricola Punica", d: { it: "Carignano di grande carattere, tra mora, spezie e macchia. Potente ma equilibrato.", en: "A Carignano with real character, between blackberry, spice and scrub. Powerful yet balanced." }, p: "72" },
+        { name: "Turriga — Argiolas", d: { it: "Il grande rosso della Sardegna: concentrato, speziato, con un finale lunghissimo.", en: "Sardinia's great red: concentrated, spicy, with a very long finish." }, p: "140" }
+      ]
+    },
+    {
+      title: { it: "Sicilia", en: "Sicily" },
+      items: [
+        { name: "Anthìlia Bianco — Donnafugata", d: { it: "Bianco siciliano fresco e floreale, con agrumi e mela. Semplice e sempre gradevole.", en: "A fresh, floral Sicilian white with citrus and apple. Simple and always pleasant." }, p: "42" },
+        { name: "Sedàra — Donnafugata", d: { it: "Nero d'Avola morbido e fruttato, con ciliegia e spezie dolci. Rosso da tutto pasto.", en: "A soft, fruity Nero d'Avola with cherry and sweet spice. A red for the whole meal." }, p: "42" },
+        { name: "Sherazade — Donnafugata", d: { it: "Nero d'Avola giovane e croccante, tutto frutta rossa. Piacevole anche leggermente fresco.", en: "A young, crunchy Nero d'Avola, all red fruit. Lovely even served slightly cool." }, p: "45" },
+        { name: "Lumera Rosé — Donnafugata", d: { it: "Rosato siciliano profumato, tra melograno e fiori. Fresco, versatile, molto beverino.", en: "A fragrant Sicilian rosé, between pomegranate and flowers. Fresh, versatile, very drinkable." }, p: "45" }
+      ]
+    },
+    {
+      title: { it: "Campania", en: "Campania" },
+      items: [
+        { name: "Falanghina — Feudi di San Gregorio", d: { it: "Bianco campano fresco e sapido, con pera e fiori bianchi. Ottimo con pizza e fritture.", en: "A fresh, savoury Campanian white with pear and white flowers. Great with pizza and fried dishes." }, p: "42" },
+        { name: "Rubrato Aglianico — Feudi di San Gregorio", d: { it: "Aglianico vivace, con amarena e una bella nota minerale. Rosso di carattere a prezzo onesto.", en: "A lively Aglianico with sour cherry and a fine mineral note. A red with character at a fair price." }, p: "42" }
+      ]
+    },
+    {
+      title: { it: "Puglia", en: "Apulia" },
+      items: [
+        { name: "Primitivo di Manduria Sessantanni", d: { it: "Da vecchie vigne: caldo, denso, con prugna e cioccolato. Un rosso che riempie il bicchiere.", en: "From old vines: warm, dense, with plum and chocolate. A red that fills the glass." }, p: "72" }
+      ]
+    },
+    {
+      title: { it: "Umbria", en: "Umbria" },
+      items: [
+        { name: "Rossobastardo — Cesarini Sartori", d: { it: "Sangiovese umbro schietto e speziato, con frutta rossa matura. Diretto e conviviale.", en: "A straightforward, spicy Umbrian Sangiovese with ripe red fruit. Direct and convivial." }, p: "45" }
       ]
     }
   ]
