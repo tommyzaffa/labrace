@@ -367,7 +367,7 @@ LB.wine = {
     {
       title: { it: "Piemonte", en: "Piedmont" },
       items: [
-        { name: "Gattinara 0,5 l — Travaglini", d: { it: "Nebbiolo di montagna in mezza bottiglia: elegante, con viola e spezie. La misura giusta a pranzo.", en: "Mountain Nebbiolo in a half bottle: elegant, with violet and spice. The right size at lunch." }, p: "37.50" },
+        { name: "Gattinara 0,5 l — Travaglini", d: { it: "Nebbiolo dell'Alto Piemonte, austero e raffinato. Tannino fine e un finale che non finisce mai. In mezza bottiglia, la misura giusta a pranzo.", en: "Upper-Piedmont Nebbiolo, austere and refined. Fine tannin and a finish that never ends. In a half bottle, the right size at lunch." }, p: "37.50" },
         { name: "Gattinara — Travaglini", d: { it: "Nebbiolo dell'Alto Piemonte, austero e raffinato. Tannino fine e un finale che non finisce mai.", en: "Upper-Piedmont Nebbiolo, austere and refined. Fine tannin and a finish that never ends." }, p: "54" },
         { name: "Montebruna — Braida", d: { it: "Barbera d'Asti succosa e vivace, tutta amarena e freschezza. Perfetta con salumi e carni alla griglia.", en: "A juicy, lively Barbera d'Asti, all sour cherry and freshness. Perfect with cured meats and grilled cuts." }, p: "56" },
         { name: "Barolo Bricat — Manzone", d: { it: "Il re dei rossi piemontesi: rosa, catrame e liquirizia, con una struttura importante.", en: "The king of Piedmont reds: rose, tar and liquorice, with serious structure." }, p: "79" },
