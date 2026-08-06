@@ -19,3 +19,6 @@
 # Il sito serve solo le versioni ottimizzate in assets/img/web, assets/img/thumb, assets/video/web
 assets/video/hero.mp4
 assets/video/web/*-orig.mp4
+
+# Claude
+.claude
