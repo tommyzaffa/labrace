@@ -444,8 +444,8 @@ LB.wine = {
 LB.events = [
   { feature: true, img: "events/evento-mese.jpeg",
     tag: { it: "Evento del mese", en: "Event of the month" },
-    title: { it: "Costine a volontà", en: "Unlimited ribs" },
-    link: "https://pnssm.pro/yxeiy3d",
+    title: { it: "Girocarne a volontà", en: "Unlimited meat round" },
+    link: "https://pnssm.pro/os6mz65",
     cta: { it: "Prenota il tuo posto", en: "Book your spot" } },
   { img: "0055_Braceria_Manno_050526.jpg",
     tag: { it: "Su prenotazione", en: "On reservation" },
