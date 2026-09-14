@@ -120,11 +120,12 @@
     if (!grid) return;
     grid.innerHTML = LB.events.map((e) => {
       if (e.feature) {
+        const poster = `<img src="assets/img/${e.img}" alt="${tv(e.title)}" loading="lazy">`;
         const cta = e.link
           ? `<a class="btn ecard__cta" href="${e.link}" target="_blank" rel="noopener">${tv(e.cta)}</a>`
           : "";
         return `<article class="ecard ecard--feature" data-anim>
-          <div class="ecard__img"><img src="assets/img/${e.img}" alt="${tv(e.title)}" loading="lazy"></div>
+          <div class="ecard__img">${e.link ? `<a href="${e.link}" target="_blank" rel="noopener">${poster}</a>` : poster}</div>
           <span class="ecard__tag ecard__tag--feature">${tv(e.tag)}</span>${cta}
         </article>`;
       }
