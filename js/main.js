@@ -130,12 +130,15 @@
         </article>`;
       }
       const price = e.price ? `<div class="ecard__price">${tv(e.price) || e.price}${e.note ? `<span>${tv(e.note)}</span>` : ""}</div>` : "";
+      const doc = e.doc
+        ? `<a class="ecard__doc" href="${e.doc.href}" target="_blank" rel="noopener">${tv(e.doc.label)}<span class="ecard__doc-arrow" aria-hidden="true">&#8599;</span></a>`
+        : "";
       return `<article class="ecard" data-anim>
         <div class="ecard__img"><img src="${IMG}${e.img}" alt="${tv(e.title)}" loading="lazy"></div>
         <div class="ecard__body">
           <span class="ecard__tag">${tv(e.tag)}</span>
           <h3 class="ecard__title">${tv(e.title)}</h3>
-          <p class="ecard__desc">${tv(e.d)}</p>${price}
+          <p class="ecard__desc">${tv(e.d)}</p>${price}${doc}
         </div></article>`;
     }).join("");
   }

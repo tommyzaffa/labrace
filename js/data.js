@@ -452,6 +452,8 @@ LB.events = [
     title: { it: "Cene aziendali & eventi privati", en: "Corporate dinners & private events" },
     d: { it: "Sale su misura per aziende, compleanni e ricorrenze. Menu dedicati costruiti insieme a voi, dalla brace alle bollicine.",
          en: "Tailored spaces for companies, birthdays and celebrations. Bespoke menus built with you, from the grill to the bubbles." },
+    doc: { href: "docs/proposte-aziendali.pdf",
+           label: { it: "Apri le nostre proposte", en: "Open our proposals" } },
     price: "" },
   { img: "0796_Braceria_Manno_050526.jpg",
     tag: { it: "A persona", en: "Per person" },

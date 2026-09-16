@@ -395,6 +395,12 @@ body.nav-open .navover__label { transform: translateY(0); }
 .ecard__price { margin-top: 1rem; font-family: var(--f-sub); font-weight: 700; font-size: 1.3rem; color: var(--cream); }
 .ecard__price span { font-size: 0.72rem; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; color: var(--cream-dim); margin-left: 0.5rem; }
 
+/* inline document link inside a card — a quiet typographic cue, not a button */
+.ecard__doc { display: inline-flex; align-items: center; gap: 0.5em; margin-top: 1.2rem; font-family: var(--f-sub); font-weight: 700; font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--cream); padding-bottom: 0.4em; border-bottom: 1px solid rgba(255,250,242,0.32); transition: color 0.45s var(--ease), border-color 0.45s var(--ease); }
+.ecard__doc:hover { color: var(--gold); border-color: var(--gold); }
+.ecard__doc-arrow { font-size: 0.95em; transition: transform 0.45s var(--ease); }
+.ecard__doc:hover .ecard__doc-arrow { transform: translate(2px, -2px); }
+
 /* featured "event of the month": the poster carries all the info — the card
    shows only the image plus a distinct (non-red) gold label. */
 .ecard--feature { display: block; min-height: 0; }
