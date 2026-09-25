@@ -23,6 +23,8 @@
 
   const t = (key) => (LB.i18n[lang] && LB.i18n[lang][key]) || (LB.i18n.it[key] || key);
   const tv = (obj) => (obj && (obj[lang] || obj.it)) || "";
+  // for values typed into the admin panel (data/evento.js) before they go into innerHTML
+  const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 
   function applyStaticI18n() {
     document.documentElement.lang = lang;
@@ -120,12 +122,16 @@
     if (!grid) return;
     grid.innerHTML = LB.events.map((e) => {
       if (e.feature) {
-        const poster = `<img src="assets/img/${e.img}" alt="${tv(e.title)}" loading="lazy">`;
-        const cta = e.link
-          ? `<a class="btn ecard__cta" href="${e.link}" target="_blank" rel="noopener">${tv(e.cta)}</a>`
+        // poster, link and title come from data/evento.js; switched off or missing → no card
+        const ev = LB.evento;
+        if (!ev || !ev.active || !ev.img) return "";
+        const link = /^https:\/\//i.test(ev.link || "") ? esc(ev.link) : "";
+        const poster = `<img src="assets/img/${esc(ev.img)}?v=${esc(ev.v)}" alt="${esc(ev.title || tv(e.tag))}" loading="lazy">`;
+        const cta = link
+          ? `<a class="btn ecard__cta" href="${link}" target="_blank" rel="noopener">${tv(e.cta)}</a>`
           : "";
         return `<article class="ecard ecard--feature" data-anim>
-          <div class="ecard__img">${e.link ? `<a href="${e.link}" target="_blank" rel="noopener">${poster}</a>` : poster}</div>
+          <div class="ecard__img">${link ? `<a href="${link}" target="_blank" rel="noopener">${poster}</a>` : poster}</div>
           <span class="ecard__tag ecard__tag--feature">${tv(e.tag)}</span>${cta}
         </article>`;
       }

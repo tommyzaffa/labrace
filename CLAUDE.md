@@ -21,9 +21,10 @@ Livello atteso: GSAP + ScrollTrigger, smooth scroll (Lenis), preloader curato, h
 3. **Menu** — 3 menu:
    - **À la carte**: online sul sito (contenuti completi in `docs/Menu-La-Brace-2026.pdf` — arrosticioni, salumi/formaggi, tabella dry aged, tartare, primi, carni alla brace, fritture, hamburger, menu bambini, pizze classiche/speciali, calzoni, focacce, bevande, allergeni).
    - **Vini**: online sul sito — carta vini NON ancora fornita: improvvisare contenuti realistici (rossi ticinesi/italiani, bolgheri, ecc.), il cliente manderà quella vera dopo.
-   - **Pranzo**: NON online — pulsante download del PDF `docs/menu-pranzo.pdf`. Cambia OGNI SETTIMANA: il cliente manda il nuovo file, si SOVRASCRIVE `docs/menu-pranzo.pdf` mantenendo il nome (l'HTML non si tocca mai).
+   - **Pranzo**: NON online — pulsante download del PDF `docs/menu-pranzo.pdf`. Cambia OGNI SETTIMANA e lo carica il social media manager da `admin.html` (pannello → Worker in `_admin-worker/` → commit su GitHub). A mano, se serve: si SOVRASCRIVE `docs/menu-pranzo.pdf` mantenendo il nome (l'HTML non si tocca mai).
 4. **Prenotazioni** — sezione a sé stante. Portale Pienissimo: https://pnssm.pro/fugwfs4 (aggiornato 2026-08-06, sostituisce forms.pienissimo.com/info-client) — tentare embed via iframe nel sito; se bloccato (X-Frame-Options/CSP), fallback: CTA con reindirizzamento.
 5. **Eventi** — 2–3 card di esempio scritte da me (cene aziendali, giro pizza CHF 25, all you can eat costine CHF 38, fondue chinoise/bourguignonne).
+   L'**evento del mese** (locandina, link Pienissimo, titolo, acceso/spento) vive in `data/evento.js`, generato dal pannello `admin.html`: non modificarlo a mano.
 6. **Galleria** — foto in `assets/img/` (~150 scatti professionali maggio 2026). Layout creativo (masonry/orizzontale con drag o parallax), usare anche i reel Instagram (`assets/video/Reel_*.mp4`, formato verticale 9:16) dove ha senso, es. striscia di video verticali.
 7. **Contatti** — mappa Google, orari (DA CHIEDERE al cliente — placeholder chiaro), indirizzo, telefono/email cliccabili, social.
 

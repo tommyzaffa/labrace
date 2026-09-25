@@ -22,3 +22,8 @@ assets/video/web/*-orig.mp4
 
 # Claude
 .claude
+
+# Worker del pannello admin: secret locali e cache di wrangler
+_admin-worker/.dev.vars
+_admin-worker/.wrangler/
+_admin-worker/node_modules/

@@ -1,0 +1,12 @@
+name = "labrace-admin"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+
+[vars]
+GITHUB_REPO = "tommyzaffa/labrace"
+GITHUB_BRANCH = "main"
+ALLOWED_ORIGINS = "https://labrace.ch,https://www.labrace.ch"
+
+# Secret (mai qui dentro, si impostano con `npx wrangler secret put <NOME>`):
+#   ADMIN_PASSWORD  password del pannello
+#   GITHUB_TOKEN    token fine-grained, solo repo tommyzaffa/labrace, Contents: read and write
