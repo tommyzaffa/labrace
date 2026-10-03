@@ -3,8 +3,8 @@
 LB.evento = {
   "active": true,
   "img": "events/evento-mese.jpeg",
-  "v": 1789403921,
-  "link": "https://pnssm.pro/a0hpbgj",
+  "v": 1791056015,
+  "link": "https://pnssm.pro/ukxopib",
   "title": "Fondue Chinoise a volontà — venerdì 2 ottobre, CHF 49",
-  "updated": "2026-09-14T16:38:41.000Z"
+  "updated": "2026-10-03T19:33:35.968Z"
 };
