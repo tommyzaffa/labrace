@@ -3,8 +3,8 @@
 LB.evento = {
   "active": true,
   "img": "events/evento-mese.jpeg",
-  "v": 1791056015,
+  "v": 1791207613,
   "link": "https://pnssm.pro/ukxopib",
   "title": "Costate e Fiorentine A Volontà — venerdì 2 ottobre, CHF 79",
-  "updated": "2026-10-03T19:34:04.755Z"
+  "updated": "2026-10-05T13:40:13.991Z"
 };
