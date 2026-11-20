@@ -3,8 +3,8 @@
 LB.evento = {
   "active": true,
   "img": "events/evento-mese.jpeg",
-  "v": 1794241612,
+  "v": 1795212293,
   "link": "https://pnssm.pro/3mslq5n",
-  "title": "PRANZO RUMENO — Domenica 29 Novembre, CHF 55",
-  "updated": "2026-11-09T16:26:52.826Z"
+  "title": "CENA RUMENA — Domenica 29 Novembre, CHF 55",
+  "updated": "2026-11-20T22:04:53.161Z"
 };
